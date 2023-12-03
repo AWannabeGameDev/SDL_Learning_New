@@ -1,0 +1,29 @@
+{
+    "version" : "2.0.0",
+    "tasks" : [
+        {
+            "label" : "Build Application",
+            "command" : "${workspaceFolder}/build.bat",
+            "group" : {
+                "kind" : "build",
+                "isDefault": false
+            }
+        },
+        {
+            "label" : "Build main",
+            "command" : "${workspaceFolder}/main/build.bat",
+            "group" : {
+                "kind" : "build",
+                "isDefault": false
+            }
+        },
+        {
+            "label" : "Build collision_engine",
+            "command" : "${workspaceFolder}/collision_engine/build.bat",
+            "group" : {
+                "kind" : "build",
+                "isDefault": false
+            }
+        }
+    ]
+}
